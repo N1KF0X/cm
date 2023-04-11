@@ -1,0 +1,13 @@
+#docker#
+sudo docker exec -it sovr-menu-portgres-1 psql sovr_menu -U postgres
+sudo docker exec -it sovr-menu-postgres-1 sh
+sudo docker exec sovr-menu-wed-api-1 flake8 sovr_menu 
+sudo docker exec sovr-menu-wed-api-1 isort --check --diff sovr_menu
+
+#postgres#
+select * from restaurant;
+insert into restaurant () values ();
+delete from restaurant where;
+
+#Инфа
+Алембик работает внутри контейнера бэка
